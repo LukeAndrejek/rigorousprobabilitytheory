@@ -26,9 +26,11 @@
     Addition of Random Variables
   </h2>
   <p>
-    We will define the addition of random variables in a way that matches our intuition behind the real world implications of the law of large numbers. For example, let \(X\) be a random variable representing a coin flip: \(\Omega=\left{H,T\right}\), \(P\left(H\right)=P\left(T\right)=1/2\), \(X\left(T\right)=0\), and \(X\left(H\right)=1\). The law of large numbers should prove, among other types of convergence, that for any \(\varepsilon>0\), the probability that the total number of heads divided by \(n\) is within \(\varepsilon\) of \(1/2\) converges to \(1\) as \(n\to\infty\).
+    We will define the addition of random variables in a way that matches our intuition behind the real world implications of the law of large numbers. For example, let \(X\) be a random variable representing a coin flip: \(\Omega=\left\lbrace H,T\right\rbrace\), \(P\left(H\right)=P\left(T\right)=1/2\), \(X\left(T\right)=0\), and \(X\left(H\right)=1\). The law of large numbers should prove, among other types of convergence, that for any \(\varepsilon>0\), the probability that the total number of heads divided by \(n\) is within \(\varepsilon\) of \(1/2\) converges to \(1\) as \(n\to\infty\).
   </p>
-  In this example, we would interpret \(X+X\) as the outcome of two coin flips. So the resulting random variable would have domain \(\left{TT,TH,HT,HH\right}\) and assign \(0\) to \(TT\), \(1\) to \(TH\) and \(HT\), and \(2\) to \(HH\). This example motivates our definition.
+  <p>
+  In this example, we would interpret \(X+X\) as the outcome of two coin flips. So the resulting random variable would have domain \(\left\lbrace TT,TH,HT,HH\right\rbrace\) and assign \(0\) to \(TT\), \(1\) to \(TH\) and \(HT\), and \(2\) to \(HH\). This example motivates our definition.
+  </p>
   <p>
     <ins>Definition:</ins> The <ins>probability sum</ins> of two random variables \(X_{1}\) and \(X_{2}\) on \(\left(\Omega_{1},P_{1}\right)\) and \(\left(\Omega_{2},P_{2}\right)\) is a function on \(\left(\Omega_{1}\times\Omega_{2},P_{1}\times P_{2}\right)\) which we will denote by \(X_{1}\oplus X_{2}\) and define by \(\left(X_{1}\oplus X_{2}\right)\left(x_{1},x_{2}\right)=X_{1}\left(x_{1}\right)+X_{2}\left(x_{2}\right)\).
   </p>
