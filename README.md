@@ -22,6 +22,9 @@
   <p>
     The format of this post is to walk through the major results of Rick Durrett's textbook Probability: Theory and Examples. I introduce new notation and prove additional statements as needed. Not all results from Durrett's textbook require new notation, so I assume that one is familiar with the remaining definitions and results from the book. Some proofs use arguments similar to proofs found in the book, and some proofs require additional steps. I also assume that one is familiar with measure theory, e.g. as presented in Real Analysis: Modern Techniques and Their Applications by Gerald Folland.
   </p>
+  <p>
+    I also tend to include a large number of steps in the calculations in my proofs. This is simply a personal preference.
+  </p>
   <h2>
     Addition of Random Variables
   </h2>
