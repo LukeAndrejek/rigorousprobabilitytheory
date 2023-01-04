@@ -45,7 +45,10 @@
   </p>
   <p>
     <ins>The \(L^{2}\) Weak Law of Large Numbers:</ins> Let \(X_{1},X_{2},\dots\) be a sequence of random variables and \(\mu\in\mathbb{R}\) such that \(EX_{i}=\mu\) for all \(i\in\mathbb{N}\) and such that \(X_{i}\odot X_{j}\) is integrable for all \(i,j\in\mathbb{N}\) with \(i\neq j\). Suppose the collection of variances \(\var\left(X_{i}\right)\) is bounded above by some \(C\in\mathbb{R}\). Let \(S_{n}=\oplus_{1}^{n}X_{i}\). Then \(S_{n}/n\to\mu\) in \(L^{2}\).
-  </p> 
+  </p>
+  <p>
+    <ins>Definition:</ins> We say that random variables \(X_{1},X_{2},\dots\) <ins>converge in probability</ins> to \(0\) if for all \(\varepsilon>0\) we have \(P_{n}\left(\left\lbrace\left|X_{n}\right|\geq\varepsilon\right\rbrace\right)\to 0\) as \(n\to\infty\).
+  </p>
   <h2>
     Addition of Random Variables
   </h2>
