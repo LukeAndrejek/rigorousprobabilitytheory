@@ -62,7 +62,7 @@
     <ins>Theorem:</ins> Given probability spaces \(\left(\Omega_{i},M_{i},P_{i}\right)\), there exists a unique probability measure \(P=\times_{1}^{\infty}P_{i}\) on \(M=\bigotimes_{1}^{\infty}M_{i}\) such that, for every \(A\in M\) of the form \(A=\times_{1}^{\infty}A_{i}\), we have \(P\left(A\right)=\prod_{1}^{\infty}P_{i}\left(A_{i}\right)\).
   </p>
   <p>
-    <ins>The Strong Law of Large Numbers:</ins> Let \(X\) be a random variable on \(\Omega_{0}\) with \(E\left|X\right|<\infty\). Set \(EX=\mu\) and \(S_{n}=\bigoplus_{1}^{n}X\). Let \(\varphi_{n}\) be a function such that for any function \(f_{n}\) on \(\times_{1}^{n}\Omega_{0}\) and any point \(\omega=\left(\omega_{1},\omega{2},\dots\right)\in\times_{1}^{\infty}\Omega\), we have \(\varphi_{n}\left(f_{n},\omega\right)=f_{n}\left(\omega_{1},\dots,\omega_{n}\right)\). Then \(\varphi_{n}\left(S_{n}/n\right)\to\mu\) a.s. with respect to the measure \(P=\times_{1}^{\infty}P_{i}\).
+    <ins>The Strong Law of Large Numbers:</ins> Let \(X\) be a random variable on \(\Omega\) with \(E\left|X\right|<\infty\). Set \(EX=\mu\) and \(S_{n}=\bigoplus_{1}^{n}X\). Let \(\varphi_{n}\) be a function such that for any function \(f_{n}\) on \(\times_{1}^{n}\Omega\) and any point \(\omega=\left(\omega_{1},\omega{2},\dots\right)\in\times_{1}^{\infty}\Omega\), we have \(\varphi_{n}\left(f_{n},\omega\right)=f_{n}\left(\omega_{1},\dots,\omega_{n}\right)\). Then \(\varphi_{n}\left(S_{n}/n\right)\to\mu\) a.s. with respect to the measure \(P=\times_{1}^{\infty}P_{i}\).
   </p>
   <h2>
     Addition of Random Variables
