@@ -68,7 +68,16 @@
     Random Variables
   </h2>
   <p>
-    <ins>Definition:</ins> A <ins>probability space</ins> consists of \(\left(\Omega,\mathscr{F},P\right)\) where \(\Omega\) is some set, \(\mathscr{F}\) is a \(\sigma-\)algebra on \(\Omega\), and \(P:\mathscr{F}\to\left[0,1\right]\) is a measure on \(\Omega\) such that \(P\left(\Omega\right)=1\).
+    <ins>Definition:</ins> A <ins>probability space</ins> consists of \(\left(\Omega,\mathscr{F},P\right)\) where \(\Omega\) is some set, \(\mathscr{F}\) is a \(\sigma\)-algebra on \(\Omega\), and \(P:\mathscr{F}\to\left[0,1\right]\) is a <ins>probability measure</ins>, which means that it is a measure on \(\Omega\) such that \(P\left(\Omega\right)=1\).
+  </p>
+  <p>
+    <ins>Definition:</ins> Given a probability space \(\left(\Omega,\mathscr{F},P\right)\), a <ins>random variable</ins> is an \(\left(\mathscr{F},P\right)\)-measurable function \(X:\Omega\to\mathbb{R}\).
+  </p>
+  <p>
+    <ins>Example:</ins> Random variables can be used to model random events. For example, suppose you flip two coins, and then you get 2 dollars for every head and lose 1 dollar for every tail. We can model this using a random variable \(X\) where \(\Omega=\left\lbrace HH,HT,TH,TT\right\rbrace\), \(\mathscr{F}\) is the power set of \(\Omega\), and \(P\) is defined so that \(P\left(\omega\right)=0.25\) for every \(\omega\in\Omega\). Then we set \(X\left(TT\right)=-2\), \(X\left(HT\right)=X\left(TH\right)=1\), and \(X\left(HH\right)=4\).
+  </p>
+  <p>
+    <ins>Definition:</ins> If a random variable \(X\) is integrable with respect to a probability measure \(P\), then the <ins>expected value</ins> of \(X\) is denoted \(E\left(X\right)\) or \(EX\) and equal to \(\int_{\Omega}X\,dP\).
   </p>
   <h2>
     Addition of Random Variables
