@@ -20,7 +20,7 @@
   When I decided to teach myself probability theory, I found the notation from every source I came across to be counterintuitive. For example, if \(X_{1}\) and \(X_{2}\) are random variables defined on different domains, then their sum should be undefined. If \(X_{1}\) and \(X_{2}\) are equal in distribution and have the same domain, then it should be the case that \(\left(X_{1}+X_{2}\right)/2=X_{1}=X_{2}\). If \(X_{1},X_{2},\dots\) is a sequence of independent and identically distributed random variables, then the sum \(n^{-1}\sum_{i=1}^{n}X_{i}\), which appears e.g. in the laws of large numbers, should be equal to \(X_{i}\) for all \(i\). This post is my attempt to rebuild probability theory with more intuitive notation.
   </p>
   <p>
-    The format of this post is to walk through the major results of Rick Durrett's textbook Probability: Theory and Examples. I introduce new notation and prove additional statements as needed. Not all results from Durrett's textbook require new notation, so I assume that one is familiar with the remaining definitions and results from the book. Some proofs use arguments similar to proofs found in the book, and some proofs require additional steps. I also assume that one is familiar with measure theory, e.g. as presented in Real Analysis: Modern Techniques and Their Applications by Gerald Folland.
+    I will start this post with a list of the unorthodox definitions and theorems I have developed. This provides a brief overview without digging into the weeds. Then, my plan is to make this a comprehensive treatment of probability theory from the point of view of someone who is already familiar with measure theory, e.g. through reading Real Analysis: Modern Techniques and Their Applications by Gerald Folland. The structure will closely resemble Rick Durrett's textbook Probability: Theory and Examples. I introduce new notation and prove additional statements as needed. Some proofs use arguments very similar to proofs found in the book, and some proofs require additional steps.
   </p>
   <p>
     I also tend to include a large number of steps in the calculations in my proofs. This is simply a personal preference.
@@ -63,6 +63,12 @@
   </p>
   <p>
     <ins>The Strong Law of Large Numbers:</ins> Let \(X\) be a random variable on \(\Omega\) with \(E\left|X\right|<\infty\). Set \(EX=\mu\) and \(S_{n}=\bigoplus_{1}^{n}X\). Let \(\varphi_{n}\) be defined such that for any function \(f_{n}\) on \(\times_{1}^{n}\Omega\) and any point \(\omega=\left(\omega_{1},\omega_{2},\dots\right)\in\times_{1}^{\infty}\Omega\), we have \(\varphi_{n}\left(f_{n},\omega\right)=f_{n}\left(\omega_{1},\dots,\omega_{n}\right)\). Then \(\varphi_{n}\left(S_{n}/n\right)\to\mu\) a.s. with respect to the measure \(P=\times_{1}^{\infty}P_{i}\).
+  </p>
+  <h2>
+    Random Variables
+  </h2>
+  <p>
+    <ins>Definition:</ins> A <ins>probability space</ins> consists of \(\left(\Omega,\mathscr{F},P\right)\) where \(\Omega\) is some set, \(\mathscr{F}\) is a \(\sigma-\)algebra on \(\Omega\), and \(P:\mathscr{F}\to\left[0,1\right]\) is a measure on \(\Omega\) such that \(P\left(\Omega\right)=1\).
   </p>
   <h2>
     Addition of Random Variables
