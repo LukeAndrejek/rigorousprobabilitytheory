@@ -124,7 +124,7 @@ Each of the sets in the above union are measurable since \(X_{1}\) and \(X_{2}\)
   </p>
   <p>
     For simple functions, suppose \(X_{1}=\sum_{1}^{n}a_{i}\mathbb{1}_{B_{i}}\) and \(X_{2}=\sum_{1}^{m}c_{j}\mathbb{1}_{D_{j}}\), so that \(\left(X_{1}\oplus X_{2}\right)\left(\omega_{1},\omega_{2}\right)
-=\sum_{i,j}a_{i}\1_{B_{i}}\left(\omega_{1}\right)+c_{j}\1_{D_{j}}\left(\omega_{2}\right)\). Let \(B=\bigcup_{1}^{n}B_{i}\) and \(D=\bigcup_{1}^{m}D_{j}\). Then for any measurable \(S\),
+=\sum_{i,j}a_{i}\mathbb{1}_{B_{i}}\left(\omega_{1}\right)+c_{j}\mathbb{1}_{D_{j}}\left(\omega_{2}\right)\). Let \(B=\bigcup_{1}^{n}B_{i}\) and \(D=\bigcup_{1}^{m}D_{j}\). Then for any measurable \(S\),
     \[
     \left(X_{1}\oplus X_{2}\right)^{-1}\left(S\right)
     =
