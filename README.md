@@ -95,7 +95,7 @@
     <ins>Theorem:</ins> If \(X_{1}\) and \(X_{2}\) are random variables, then so is \(X_{1}\oplus X_{2}\).
   </p>
   <p>
-    <ins>Proof:</ins> By definition, \(\left(P_{1}\times P_{2}\right)\left(X_{1}\times X_{2}\right)
+    <ins>Proof:</ins> By definition, \(\left(P_{1}\times P_{2}\right)\left(X_{1}\oplus X_{2}\right)
 =P_{1}\left(X_{1}\right)P_{2}\left(X_{2}\right)=1\). We will prove that \(X_{1}\oplus X_{2}\) is measurable when \(X_{1}\) and \(X_{2}\) are indicator, then simple, then measurable functions.
   </p>
   <p>
@@ -123,10 +123,10 @@
 Each of the sets in the above union are measurable since \(X_{1}\) and \(X_{2}\) are measurable functions. Thus \(\left(X_{1}\oplus X_{2}\right)^{-1}\left(S\right)\) is a countable union of measurable sets and thus is measurable.
   </p>
   <p>
-    For simple functions, suppose \(X_{1}=\sum_{1}^{n}a_{i}\1_{B_{i}}\) and \(X_{2}=\sum_{1}^{m}c_{j}\1_{D_{j}}\), so that \(\left(X_{1}\oplus X_{2}\right)\left(\omega_{1},\omega_{2}\right)
+    For simple functions, suppose \(X_{1}=\sum_{1}^{n}a_{i}\mathbb{1}_{B_{i}}\) and \(X_{2}=\sum_{1}^{m}c_{j}\mathbb{1}_{D_{j}}\), so that \(\left(X_{1}\oplus X_{2}\right)\left(\omega_{1},\omega_{2}\right)
 =\sum_{i,j}a_{i}\1_{B_{i}}\left(\omega_{1}\right)+c_{j}\1_{D_{j}}\left(\omega_{2}\right)\). Let \(B=\bigcup_{1}^{n}B_{i}\) and \(D=\bigcup_{1}^{m}D_{j}\). Then for any measurable \(S\),
     \[
-    \left(X_{1}\oplus X_{2}\rp^{-1}\left(S\right)
+    \left(X_{1}\oplus X_{2}\right)^{-1}\left(S\right)
     =
     \bigcup_{i=1}^{n}
     \delta_{a_{i}\in S}
@@ -146,7 +146,7 @@ Each of the sets in the above union are measurable since \(X_{1}\) and \(X_{2}\)
     \cup
     \bigcup_{i,j}
     \delta_{a_{i}+c_{j}\in S}
-    \left(X_{1}^{-1}\left(B_{i}\right)\times X_{2}^{-1}\lp D_{j}\right)\right)
+    \left(X_{1}^{-1}\left(B_{i}\right)\times X_{2}^{-1}\left(D_{j}\right)\right)
     \dots
     \]
     \[
