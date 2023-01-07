@@ -68,7 +68,7 @@
     Random Variables
   </h2>
   <p>
-    <ins>Definition:</ins> A <ins>probability space</ins> consists of \(\left(\Omega,\mathscr{F},P\right)\) where \(\Omega\) is some set, \(\mathscr{F}\) is a \(\sigma\)-algebra on \(\Omega\), and \(P:\mathscr{F}\to\left[0,1\right]\) is a <ins>probability measure</ins>, which means that it is a measure on \(\Omega\) such that \(P\left(\Omega\right)=1\).
+    <ins>Definition:</ins> A <ins>probability space</ins> consists of \(\left(\Omega,\mathscr{F},P\right)\) where \(\Omega\) is some measurable set, \(\mathscr{F}\) is a \(\sigma\)-algebra on \(\Omega\), and \(P:\mathscr{F}\to\left[0,1\right]\) is a <ins>probability measure</ins>, which means that it is a measure on \(\Omega\) such that \(P\left(\Omega\right)=1\).
   </p>
   <p>
     <ins>Definition:</ins> Given a probability space \(\left(\Omega,\mathscr{F},P\right)\), a <ins>random variable</ins> is an \(\left(\mathscr{F},P\right)\)-measurable function \(X:\Omega\to\mathbb{R}\).
@@ -90,6 +90,35 @@
   </p>
   <p>
     Using this definition, the laws of large numbers can be rephrased as the convergence of \(n^{-1}\bigoplus_{1}^{n}X_{i}\) to \(EX_{i}\) in some sense.
+  </p>
+  <p>
+    <ins>Theorem:</ins> If \(X_{1}\) and \(X_{2}\) are random variables, then so is \(X_{1}\oplus X_{2}\).
+  </p>
+  <p>
+    <ins>Proof:</ins> By definition, \(\eft(P_{1}\times P_{2}\right)\left(X_{1}\times X_{2}\right)
+=P_{1}\left(X_{1}\right)P_{2}\left(X_{2}\right)=1\). We will prove that \(X_{1}\oplus X_{2}\) is measurable when \(X_{1}\) and \(X_{2}\) are indicator, then simple, then measurable functions.
+  </p>
+  <p>
+    For indicator functions, suppose \(X_{1}=a\mathbb{1}_{B}\) and \(X_{2}=c\mathbb{1}_{D}\). Then \(\left(X_{1}\oplus X_{2}\right)\left(\omega_{1},\omega_{2}\right)
+=a\mathbb{1}_{B}\left(\omega_{1}\right)+c\mathbb{1}_{D}\left(\omega_{2}\right)\). Given a set \(S\) and a condition \(x\), define a set \(\delta_{x}\left(S\right)=\emptyset\) if \(x\) is false and \(\delta_{x}\left(S\right)=S\) if \(x\) is true. Then for each measurable \(S\subset\mathbb{R}\),
+    \[
+    \lp X_{1}\oplus X_{2}\rp^{-1}\lp S\rp
+    =&
+    \delta_{a\in S}
+    \lp X_{1}^{-1}\lp B\rp\times X_{2}^{-1}\lp D^{c}\rp\rp
+    \cup
+    \delta_{c\in S}
+    \lp X_{1}^{-1}\lp B^{c}\rp\times X_{2}^{-1}\lp D\rp\rp
+    \\
+    &\cup
+    \delta_{a+c\in S}
+    \lp X_{1}^{-1}\lp B\rp\times X_{2}^{-1}\lp D\rp\rp
+    \cup
+    \delta_{0\in S}
+    \lp X_{1}^{-1}\lp B^{c}\rp\times X_{2}^{-1}\lp D^{c}\rp\rp
+    .
+    \]
+Each of the sets in the above union are measurable since \(X_{1}\) and \(X_{2}\) are measurable functions. Thus \(\left(X_{1}\oplus X_{2}\right)^{-1}\left(S\right)\) is a countable union of measurable sets and thus is measurable.
   </p>
 </body>
 </html>
