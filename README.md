@@ -95,7 +95,7 @@
     <ins>Theorem:</ins> If \(X_{1}\) and \(X_{2}\) are random variables, then so is \(X_{1}\oplus X_{2}\).
   </p>
   <p>
-    <ins>Proof:</ins> By definition, \(\eft(P_{1}\times P_{2}\right)\left(X_{1}\times X_{2}\right)
+    <ins>Proof:</ins> By definition, \(\left(P_{1}\times P_{2}\right)\left(X_{1}\times X_{2}\right)
 =P_{1}\left(X_{1}\right)P_{2}\left(X_{2}\right)=1\). We will prove that \(X_{1}\oplus X_{2}\) is measurable when \(X_{1}\) and \(X_{2}\) are indicator, then simple, then measurable functions.
   </p>
   <p>
@@ -119,9 +119,46 @@
     \cup
     \delta_{0\in S}
     \left(X_{1}^{-1}\left(B^{c}\right)\times X_{2}^{-1}\left(D^{c}\right)\right)
-    .
-    \]
+    .\]
 Each of the sets in the above union are measurable since \(X_{1}\) and \(X_{2}\) are measurable functions. Thus \(\left(X_{1}\oplus X_{2}\right)^{-1}\left(S\right)\) is a countable union of measurable sets and thus is measurable.
+  </p>
+  <p>
+    For simple functions, suppose \(X_{1}=\sum_{1}^{n}a_{i}\1_{B_{i}}\) and \(X_{2}=\sum_{1}^{m}c_{j}\1_{D_{j}}\), so that \(\left(X_{1}\oplus X_{2}\right)\left(\omega_{1},\omega_{2}\right)
+=\sum_{i,j}a_{i}\1_{B_{i}}\left(\omega_{1}\right)+c_{j}\1_{D_{j}}\left(\omega_{2}\right)\). Let \(B=\bigcup_{1}^{n}B_{i}\) and \(D=\bigcup_{1}^{m}D_{j}\). Then for any measurable \(S\),
+    \[
+    \left(X_{1}\oplus X_{2}\rp^{-1}\left(S\right)
+    =
+    \bigcup_{i=1}^{n}
+    \delta_{a_{i}\in S}
+    \left(X_{1}^{-1}\left(B_{i}\right)\times X_{2}^{-1}\left(D^{c}\right)\right)
+    \dots
+    \]
+    \[
+    \dots
+    \cup
+    \bigcup_{j=1}^{m}
+    \delta_{c_{j}\in S}
+    \left(X_{1}^{-1}\left(B^{c}\right)\times X_{2}^{-1}\left(D_{j}\right)\right)
+    \dots
+    \]
+    \[
+    \dots
+    \cup
+    \bigcup_{i,j}
+    \delta_{a_{i}+c_{j}\in S}
+    \left(X_{1}^{-1}\left(B_{i}\right)\times X_{2}^{-1}\lp D_{j}\right)\right)
+    \dots
+    \]
+    \[
+    \dots
+    \cup
+    \delta_{0\in S}
+    \left(X_{1}^{-1}\left(B^{c}\right)\times X_{2}^{-1}\left(D^{c}\right)\right)
+    .\]
+This is again a countable union of measurable sets and thus is measurable.
+  </p>
+  <p>
+    If \(X_{1},X_{2}\) are measurable, then we know by Theorem 2.10 of Folland's analysis textbook that there are sequences of simple functions \(X_{1,n}\) and \(X_{2,n}\) such that \(X_{1,n}\to X_{1}\) and \(X_{2,n}\to X_{2}\). Then \(X_{1,n}\oplus X_{2,n}\) are simple (and thus measurable) functions which converge pointwise to \(X_{1}\oplus X_{2}\). We also know by Proposition 2.7 from the same book that if a sequence of measurable functions converge pointwise, then their limit is measurable. Thus \(X_{1}\oplus X_{2}\) is measurable, which confirms that it is a random variable.
   </p>
 </body>
 </html>
