@@ -71,7 +71,7 @@
     <ins>Definition:</ins> A <ins>probability space</ins> consists of \(\left(\Omega,\mathscr{F},P\right)\) where \(\Omega\) is some measurable set, \(\mathscr{F}\) is a \(\sigma\)-algebra on \(\Omega\), and \(P:\mathscr{F}\to\left[0,1\right]\) is a <ins>probability measure</ins>, which means that it is a measure on \(\Omega\) such that \(P\left(\Omega\right)=1\).
   </p>
   <p>
-    <ins>Definition:</ins> Given a probability space \(\left(\Omega,\mathscr{F},P\right)\), a <ins>random variable</ins> is an \(\left(\mathscr{F},P\right)\)-measurable function \(X:\Omega\to\mathbb{R}\). \(X\) is associated with a <ins>distribution function</ins> \(F:\mathbb{R}\to\left[0,1\right]\) given by \(F\left(x\right)=P\left(X\leq x\right)=P\left(X^{-1}\left(\left(-\infty,x\right]\right)\right)=P\left(\left\lbrace\omega\in\Omega:X\left(\omega\right)\leq x\right\rbrace\right)\).
+    <ins>Definition:</ins> Given a probability space \(\left(\Omega,\mathscr{F},P\right)\), a <ins>random variable</ins> is an \(\left(\mathscr{F},P\right)\)-measurable function \(X:\Omega\to\mathbb{R}\). If the range of \(X\) is an arbitrary measurable space \(S,\mathscr{S}\right)\), then we call \(X\) a <ins>random element</ins> of \(S,\mathscr{S}\right)\). \(X\) is associated with a probability measure on \(\R\) referred to as its <ins>distribution</ins> and defined by \(\mu\left(A\right)=P\left(X\in A\right)=P\left(\left\lbrace\omega\in\Omega:X\left(\omega\right)\in A\right\rbrace\right). \(X\) is also associated with a <ins>distribution function</ins> \(F:\mathbb{R}\to\left[0,1\right]\) given by \(F\left(x\right)=P\left(X\leq x\right)=P\left(X^{-1}\left(\left(-\infty,x\right]\right)\right)=P\left(\left\lbrace\omega\in\Omega:X\left(\omega\right)\leq x\right\rbrace\right)\).
   </p>
   <p>
     <ins>Example:</ins> Random variables can be used to model random events. For example, suppose you flip two coins, and then you get 2 dollars for every head and lose 1 dollar for every tail. We can model this using a random variable \(X\) where \(\Omega=\left\lbrace HH,HT,TH,TT\right\rbrace\), \(\mathscr{F}\) is the power set of \(\Omega\), and \(P\) is defined so that \(P\left(\omega\right)=0.25\) for every \(\omega\in\Omega\). Then we set \(X\left(TT\right)=-2\), \(X\left(HT\right)=X\left(TH\right)=1\), and \(X\left(HH\right)=4\).
@@ -150,7 +150,17 @@ Each of the sets in the above union are measurable since \(X_{1}\) and \(X_{2}\)
 This is again a countable union of measurable sets and thus is measurable.
   </p>
   <p>
-    If \(X_{1},X_{2}\) are measurable, then we know by Theorem 2.10 of Folland's analysis textbook that there are sequences of simple functions \(X_{1,n}\) and \(X_{2,n}\) such that \(X_{1,n}\to X_{1}\) and \(X_{2,n}\to X_{2}\). Then \(X_{1,n}\oplus X_{2,n}\) are simple (and thus measurable) functions which converge pointwise to \(X_{1}\oplus X_{2}\). We also know by Proposition 2.7 from the same book that if a sequence of measurable functions converge pointwise, then their limit is measurable. Thus \(X_{1}\oplus X_{2}\) is measurable, which confirms that it is a random variable.
+    If \(X_{1},X_{2}\) are measurable, then we know by Theorem 2.10 of Folland's analysis textbook that there are sequences of simple functions \(X_{1,n}\) and \(X_{2,n}\) such that \(X_{1,n}\to X_{1}\) and \(X_{2,n}\to X_{2}\). Then \(X_{1,n}\oplus X_{2,n}\) are simple (and thus measurable) functions which converge pointwise to \(X_{1}\oplus X_{2}\). We also know by Proposition 2.7 from the same book that if a sequence of measurable functions converge pointwise, then their limit is measurable. Thus \(X_{1}\oplus X_{2}\) is measurable, which confirms that it is a random variable. \(\square\)
+  </p>
+  <p>
+    It will sometimes be useful in our calculations to change variables using the following proposition.
+  </p>
+  <p>
+    <ins>Proposition:</ins> Let \(X:\Omega\to S\) be a random element of \(\left(S,\mathscr{S}\right)\) with distribution \left(\mu\left(A\right)=P\left(X^{-1}\left(A\right)\right)\). If \(f\) is measurable from \(\left(S,\mathscr{S}\right)\) to \(\left(\mathbb{R},\mathscr{R}\right)\) such that \(f\geq 0\) or \(\int_{\Omega}\left|f\circ X\right|\,dP<\infty\), then \(\int_{\Omega}f\circ X\,dP
+=\int_{S}f\,d\mu\).
+  </p>
+  <p>
+    <ins>Proof:</ins> This is Theorem 1.6.9 in Durrett's textbook, and so you can find the proof there. By the way, "\(\mu\left(dy\right)\)" is synonymous with "\(d\mu\)" in his proof.
   </p>
 </body>
 </html>
