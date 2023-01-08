@@ -125,35 +125,28 @@ Each of the sets in the above union are measurable since \(X_{1}\) and \(X_{2}\)
     For simple functions, suppose \(X_{1}=\sum_{1}^{n}a_{i}\mathbb{1}_{B_{i}}\) and \(X_{2}=\sum_{1}^{m}c_{j}\mathbb{1}_{D_{j}}\), so that \(\left(X_{1}\oplus X_{2}\right)\left(\omega_{1},\omega_{2}\right)
 =\sum_{i,j}a_{i}\mathbb{1}_{B_{i}}\left(\omega_{1}\right)+c_{j}\mathbb{1}_{D_{j}}\left(\omega_{2}\right)\). Let \(B=\bigcup_{1}^{n}B_{i}\) and \(D=\bigcup_{1}^{m}D_{j}\). Then for any measurable \(S\),
     \[
+    \begin{aligned}
     \left(X_{1}\oplus X_{2}\right)^{-1}\left(S\right)
-    =
+    =&
     \bigcup_{i=1}^{n}
     \delta_{a_{i}\in S}
     \left(X_{1}^{-1}\left(B_{i}\right)\times X_{2}^{-1}\left(D^{c}\right)\right)
-    \dots
-    \]
-    \[
-    \dots
-    \cup
+    \\
+    &\cup
     \bigcup_{j=1}^{m}
     \delta_{c_{j}\in S}
     \left(X_{1}^{-1}\left(B^{c}\right)\times X_{2}^{-1}\left(D_{j}\right)\right)
-    \dots
-    \]
-    \[
-    \dots
-    \cup
+    \\
+    &\cup
     \bigcup_{i,j}
     \delta_{a_{i}+c_{j}\in S}
     \left(X_{1}^{-1}\left(B_{i}\right)\times X_{2}^{-1}\left(D_{j}\right)\right)
-    \dots
-    \]
-    \[
-    \dots
-    \cup
+    \\
+    &\cup
     \delta_{0\in S}
-    \left(X_{1}^{-1}\left(B^{c}\right)\times X_{2}^{-1}\left(D^{c}\right)\right)
-    .\]
+    \left(X_{1}^{-1}\left(B^{c}\right)\times X_{2}^{-1}\left(D^{c}\right)\right).
+    \end{aligned}
+    \]
 This is again a countable union of measurable sets and thus is measurable.
   </p>
   <p>
