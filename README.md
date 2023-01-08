@@ -102,24 +102,23 @@
     For indicator functions, suppose \(X_{1}=a\mathbb{1}_{B}\) and \(X_{2}=c\mathbb{1}_{D}\). Then \(\left(X_{1}\oplus X_{2}\right)\left(\omega_{1},\omega_{2}\right)
 =a\mathbb{1}_{B}\left(\omega_{1}\right)+c\mathbb{1}_{D}\left(\omega_{2}\right)\). Given a set \(S\) and a condition \(x\), define a set \(\delta_{x}\left(S\right)=\emptyset\) if \(x\) is false and \(\delta_{x}\left(S\right)=S\) if \(x\) is true. Then for each measurable \(S\subset\mathbb{R}\),
     \[
+    \begin{aligned}
     \left(X_{1}\oplus X_{2}\right)^{-1}\left(S\right)
-    =
+    =&
     \delta_{a\in S}
     \left(X_{1}^{-1}\left(B\right)\times X_{2}^{-1}\left(D^{c}\right)\right)
     \cup
     \delta_{c\in S}
     \left(X_{1}^{-1}\left(B^{c}\right)\times X_{2}^{-1}\left(D\right)\right)
-    \dots
-    \]
-    \[
-    \dots
-    \cup
+    \\
+    &\cup
     \delta_{a+c\in S}
     \left(X_{1}^{-1}\left(B\right)\times X_{2}^{-1}\left(D\right)\right)
     \cup
     \delta_{0\in S}
-    \left(X_{1}^{-1}\left(B^{c}\right)\times X_{2}^{-1}\left(D^{c}\right)\right)
-    .\]
+    \left(X_{1}^{-1}\left(B^{c}\right)\times X_{2}^{-1}\left(D^{c}\right)\right).
+    \end{aligned}
+    \]
 Each of the sets in the above union are measurable since \(X_{1}\) and \(X_{2}\) are measurable functions. Thus \(\left(X_{1}\oplus X_{2}\right)^{-1}\left(S\right)\) is a countable union of measurable sets and thus is measurable.
   </p>
   <p>
