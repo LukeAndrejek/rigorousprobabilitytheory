@@ -156,7 +156,7 @@ This is again a countable union of measurable sets and thus is measurable.
     It will sometimes be useful in our calculations to change variables using the following proposition.
   </p>
   <p>
-    <ins>Proposition:</ins> Let \(X:\Omega\to S\) be a random element of \(\left(S,\mathscr{S}\right)\) with distribution \(\left(\mu\left(A\right)=P\left(X^{-1}\left(A\right)\right)\). If \(f\) is measurable from \(\left(S,\mathscr{S}\right)\) to \(\left(\mathbb{R},\mathscr{R}\right)\) such that \(f\geq 0\) or \(\int_{\Omega}\left|f\circ X\right|\,dP<\infty\), then \(\int_{\Omega}f\circ X\,dP
+    <ins>Proposition:</ins> Let \(X:\Omega\to S\) be a random element of \(\left(S,\mathscr{S}\right)\) with distribution \(\left(\mu\left(A\right)\right)=P\left(X^{-1}\left(A\right)\right)\). If \(f\) is measurable from \(\left(S,\mathscr{S}\right)\) to \(\left(\mathbb{R},\mathscr{R}\right)\) such that \(f\geq 0\) or \(\int_{\Omega}\left|f\circ X\right|\,dP<\infty\), then \(\int_{\Omega}f\circ X\,dP
 =\int_{S}f\,d\mu\).
   </p>
   <p>
