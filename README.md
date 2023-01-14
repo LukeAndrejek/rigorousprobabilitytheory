@@ -160,7 +160,10 @@ This is again a countable union of measurable sets and thus is measurable.
 =\int_{S}f\,d\mu\).
   </p>
   <p>
-    <ins>Proof:</ins> This is Theorem 1.6.9 in Durrett's textbook, and so you can find the proof there. By the way, "\(\mu\left(dy\right)\)" is synonymous with "\(d\mu\)" in his proof.
+    <ins>Proof:</ins> This is Theorem 1.6.9 in Durrett's textbook, so you can find the proof there. By the way, "\(\mu\left(dy\right)\)" is synonymous with "\(d\mu\)" in his proof.
+  </p>
+  <p>
+    <ins>Note:</ins> When integrating with respect to a measure \(\mu\), we may use the notation \(d\mu\left(x\right)\) when integrating a function with input \(x\) with respect to the measure \(\mu\). For example, \(\int f\left(x\right)\,d\mu\left(x\right)=\int f\,d\mu\).
   </p>
 </body>
 </html>
