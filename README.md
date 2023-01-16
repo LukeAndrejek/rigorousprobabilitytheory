@@ -165,5 +165,76 @@ This is again a countable union of measurable sets and thus is measurable.
   <p>
     <ins>Note:</ins> We may use the notation \(d\mu\left(x\right)\) when integrating a function with input \(x\) with respect to the measure \(\mu\). For example, \(\int f\left(x\right)\,d\mu\left(x\right)=\int f\,d\mu\).
   </p>
+  <p>
+    The following theorem shows us how to compute the distribution function of a probability sum.
+  </p>
+  <p>
+    <ins>Theorem:</ins> Let \(X_{1},X_{2}\) be random variables with distribution functions \(F_{1},F_{2}\). Let \(\mu_{i}\left( A\right)=P_{i}\left( X_{i}\in A\right)=P_{i}\left(\left\lbrace\omega\in\Omega_{i}:X_{i}\left(\omega\right)\in A\right\rbrace\right)\) for each Borel set \(A\subset\mathbb{R}\). Then \(X_{1}\oplus X_{2}\) has distribution function
+    \[
+    \begin{aligned}
+    F\left( x\right)
+    &=
+    \left( P_{1}\times P_{2}\right)
+    \left(\left\lbrace
+    \left(\omega_{1},\omega_{2}\right)\in\Omega_{1}\times\Omega_{2}:
+    X_{1}\left(\omega_{1}\right)+X_{2}\left(\omega_{2}\right)\leq x
+    \right\rbrace\right)
+    \\
+    &=
+    \int_{\R}
+    F_{1}\left( x-x_{2}\right)
+    \,d\mu_{2}\left( x_{2}\right)
+    \\
+    &=
+    \int_{\R}
+    F_{2}\left( x-x_{1}\right)
+    \,d\mu_{1}\left( x_{1}\right)
+    .
+    \end{aligned}
+    \]
+  </p>
+  <p>
+    <ins>Proof:</ins> We will prove the first integral formula as the second follows by symmetry. Let \(A_{x}=\left\lbrace\left(\omega_{1},\omega_{2}\right)\in\Omega_{1}\times\Omega_{2}:X_{1}\left(\omega_{1}\right)+X_{2}\left(\omega_{2}\right)\leq x\right\rbrace=\left( X_{1}\oplus X_{2}\right)^{-1}\left(\left( -\infty,x\rb\right)\(. Then \(\left(\omega_{1},\omega_{2}\right)\in A_{x}\( iff \(X_{1}\left(\omega_{1}\right)\leq x-X_{2}\left(\omega_{2}\right)\(. Therefore,
+    \[
+    \begin{aligned}
+    F\left( x\right)
+    &=
+    \left( P_{1}\times P_{2}\right)\left( A_{x}\right)
+    \\
+    &=
+    \int_{\Omega_{1}\times\Omega_{2}}
+    \mathbb{1}_{A_{x}}\left(\omega_{1},\omega_{2}\right)
+    \,d\left( P_{1}\times P_{2}\right)
+    \\
+    &=
+    \int_{\Omega_{2}}\int_{\Omega_{1}}
+    \mathbb{1}_{A_{x}}\left(\omega_{1},\omega_{2}\right)
+    \,dP_{1}\left(\omega_{1}\right)
+    \,dP_{2}\left(\omega_{2}\right)
+    \\
+    &=
+    \int_{\Omega_{2}}
+    P_{1}\left( A_{x}\left(\omega_{1},\omega_{2}\right)\right)
+    \,dP_{2}\left(\omega_{2}\right)
+    \\
+    &=
+    \int_{\Omega_{2}}
+    P_{1}\left\lbrace\left(\omega_{1}\in\Omega_{1}:X_{1}\left(\omega_{1}\right)\leq x-X_{2}\left(\omega_{2}\right)\right\rbrace\right)
+    \,dP_{2}\left(\omega_{2}\right)
+    \\
+    &=
+    \int_{\Omega_{2}}
+    F_{1}\left( x-X_{2}\left(\omega_{2}\right)\right)
+    \,dP_{2}\left(\omega_{2}\right)
+    \\
+    &=
+    \int_{\R}
+    F_{1}\left( x-x_{2}\right)
+    \,d\mu\left( x_{2}\right)
+    .
+    \end{aligned}
+    \]
+Note that we have used Fubini's Theorem, which applies because \(X_{1}\oplus X_{2}\( is measurable, and so \(A_{x}=\left( X_{1}\oplus X_{2}\right)^{-1}\left(\left(-\infty,x\rb\right)\( is measurable. Also, between the final two equations, we used the change of variables formula with \(f\left( y\right)=F_{1}\left( x-y\right)\(.
+  </p>
 </body>
 </html>
