@@ -181,12 +181,12 @@ This is again a countable union of measurable sets and thus is measurable.
     \right\rbrace\right)
     \\
     &=
-    \int_{\R}
+    \int_{\mathbb{R}}
     F_{1}\left( x-x_{2}\right)
     \,d\mu_{2}\left( x_{2}\right)
     \\
     &=
-    \int_{\R}
+    \int_{\mathbb{R}}
     F_{2}\left( x-x_{1}\right)
     \,d\mu_{1}\left( x_{1}\right)
     .
@@ -194,7 +194,7 @@ This is again a countable union of measurable sets and thus is measurable.
     \]
   </p>
   <p>
-    <ins>Proof:</ins> We will prove the first integral formula as the second follows by symmetry. Let \(A_{x}=\left\lbrace\left(\omega_{1},\omega_{2}\right)\in\Omega_{1}\times\Omega_{2}:X_{1}\left(\omega_{1}\right)+X_{2}\left(\omega_{2}\right)\leq x\right\rbrace=\left( X_{1}\oplus X_{2}\right)^{-1}\left(\left( -\infty,x\rb\right)\). Then \(\left(\omega_{1},\omega_{2}\right)\in A_{x}\) iff \(X_{1}\left(\omega_{1}\right)\leq x-X_{2}\left(\omega_{2}\right)\). Therefore,
+    <ins>Proof:</ins> We will prove the first integral formula as the second follows by symmetry. Let \(A_{x}=\left\lbrace\left(\omega_{1},\omega_{2}\right)\in\Omega_{1}\times\Omega_{2}:X_{1}\left(\omega_{1}\right)+X_{2}\left(\omega_{2}\right)\leq x\right\rbrace=\left( X_{1}\oplus X_{2}\right)^{-1}\left(\left( -\infty,x\right]\right)\). Then \(\left(\omega_{1},\omega_{2}\right)\in A_{x}\) iff \(X_{1}\left(\omega_{1}\right)\leq x-X_{2}\left(\omega_{2}\right)\). Therefore,
     \[
     \begin{aligned}
     F\left( x\right)
@@ -228,13 +228,13 @@ This is again a countable union of measurable sets and thus is measurable.
     \,dP_{2}\left(\omega_{2}\right)
     \\
     &=
-    \int_{\R}
+    \int_{\mathbb{R}}
     F_{1}\left( x-x_{2}\right)
     \,d\mu\left( x_{2}\right)
     .
     \end{aligned}
     \]
-Note that we have used Fubini's Theorem, which applies because \(X_{1}\oplus X_{2}\) is measurable, and so \(A_{x}=\left( X_{1}\oplus X_{2}\right)^{-1}\left(\left(-\infty,x\rb\right)\) is measurable. Also, between the final two equations, we used the change of variables formula with \(f\left( y\right)=F_{1}\left( x-y\right)\).
+Note that we have used Fubini's Theorem, which applies because \(X_{1}\oplus X_{2}\) is measurable, and so \(A_{x}=\left( X_{1}\oplus X_{2}\right)^{-1}\left(\left(-\infty,x\right]\right)\) is measurable. Also, between the final two equations, we used the change of variables formula with \(f\left( y\right)=F_{1}\left( x-y\right)\).
   </p>
 </body>
 </html>
