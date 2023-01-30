@@ -236,5 +236,27 @@ This is again a countable union of measurable sets and thus is measurable.
     \]
 Note that we have used Fubini's Theorem, which applies because \(X_{1}\oplus X_{2}\) is measurable, and so \(A_{x}=\left( X_{1}\oplus X_{2}\right)^{-1}\left(\left(-\infty,x\right]\right)\) is measurable. Also, between the final two equations, we used the change of variables formula with \(f\left( y\right)=F_{1}\left( x-y\right)\).
   </p>
+  <p>
+    It is not always clear how to integrate with respect to the measure \(\mu_{1}\) and \(\mu_{2}\) above, so we explore this further.
+  </p>
+  <p>
+    <ins>Definition:</ins> Let \(f:S_{1}\to S_{2}\( be measurable from \(\left( X_{1},\mathscr{S}_{1}\right)\( to \(\left( X_{2},\mathscr{S}_{2}\right)\(, and let \(\nu_{1}\( be a measure on \(X_{1}\(. Then there is a measure \(\nu_{2}\( on \(X_{2}\( such that \(\forall B\in\mathscr{S}_{2}\(, \(\nu_{2}\left( B\right)=\nu_{1}\left( f^{-1}\left( B\right)\right)\(. \(\nu_{2}\( is called a \underline{pushforward} of \(\nu_{1}\( and is sometimes denoted \(\nu_{2}=f\#\nu_{1}\(.
+  </p>
+  <p>
+    <ins>Theorem:</ins>
+Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable, then \(g\) is integrable w/r/t \(\nu_{2}\) iff \(g\circ f\) is integrable w/r/t \(\nu_{1}\), and in this case we have
+    \[
+    \begin{aligned}
+        \int_{S_{2}}g\,d\nu_{2}
+        =
+        \int_{f^{-1}\left( S_{2}\right)}
+        g\circ f\,d\nu_{1}
+        .
+    \end{aligned}
+    \]
+  </p>
+  <p>
+    <ins>Proof:</ins> According to Wikipedia, this appears as a theorem in Bogachev's ``Measure Theory'' textbook. I plan to include the full proof here eventually.
+  </p>
 </body>
 </html>
