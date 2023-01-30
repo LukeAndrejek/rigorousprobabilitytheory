@@ -240,7 +240,7 @@ Note that we have used Fubini's Theorem, which applies because \(X_{1}\oplus X_{
     It is not always clear how to integrate with respect to the measure \(\mu_{1}\) and \(\mu_{2}\) above, so we explore this further.
   </p>
   <p>
-    <ins>Definition:</ins> Let \(f:S_{1}\to S_{2}\) be measurable from \(\left( X_{1},\mathscr{S}_{1}\right)\( to \(\left( X_{2},\mathscr{S}_{2}\right)\), and let \(\nu_{1}\) be a measure on \(X_{1}\). Then there is a measure \(\nu_{2}\) on \(X_{2}\) such that \(\forall B\in\mathscr{S}_{2}\), \(\nu_{2}\left( B\right)=\nu_{1}\left( f^{-1}\left( B\right)\right)\). \(\nu_{2}\) is called a <ins>pushforward</ins> of \(\nu_{1}\) and is sometimes denoted \(\nu_{2}=f\#\nu_{1}\).
+    <ins>Definition:</ins> Let \(f:S_{1}\to S_{2}\) be measurable from \(\left( X_{1},\mathscr{S}_{1}\right)\) to \(\left( X_{2},\mathscr{S}_{2}\right)\), and let \(\nu_{1}\) be a measure on \(X_{1}\). Then there is a measure \(\nu_{2}\) on \(X_{2}\) such that \(\forall B\in\mathscr{S}_{2}\), \(\nu_{2}\left( B\right)=\nu_{1}\left( f^{-1}\left( B\right)\right)\). \(\nu_{2}\) is called a <ins>pushforward</ins> of \(\nu_{1}\) and is sometimes denoted \(\nu_{2}=f\#\nu_{1}\).
   </p>
   <p>
     <ins>Theorem:</ins>
