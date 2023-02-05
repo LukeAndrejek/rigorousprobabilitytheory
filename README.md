@@ -258,5 +258,47 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
   <p>
     <ins>Proof:</ins> According to Wikipedia, this appears as a theorem in Bogachev's "Measure Theory" textbook. I plan to include the full proof here eventually.
   </p>
+  <p>
+    The following theorem gives us a slightly easier formula for computing distribution functions for probability sums.
+  </p>
+  <p>
+    <ins>Theorem:</ins> Let \(F_{1},F_{2}\) be distribution functions. For \(\omega\in\left( 0,1\right)\), define \(X_{i}\left(\omega\right)=\sup\left(\left\lbrace y:F_{i}\left( y\right)<\omega\right\rbrace\right)\) for \(i=1,2\) (by Theorem 1.2.2 in Durrett's textbook, \(X_{i}\) is a random variable whose distribution function is \(F_{i}\(). Let \(\mu_{i}\left( A\right)=P_{i}\left( X_{i}\in A\right)\) for each Borel set \(A\subset\R\). Let \(m\) be the Lebesgue measure on \(\R\). Then \(X_{1}\oplus X_{2}\) has distribution function
+    \begin{aligned}
+        F\left( x\right)
+        &=
+        \int_{\R}
+        F_{1}\left( x-x_{2}\right)
+        \,d\mu_{2}\left( x_{2}\right)
+        =
+        \int_{0}^{1}
+        F_{1}\left( x-X_{2}\left( x_{2}\right)\right)
+        \,dm\left( x_{2}\right)
+        \\
+        &=
+        \int_{\R}
+        F_{2}\left( x-x_{1}\right)
+        \,d\mu_{1}\left( x_{1}\right)
+        =
+        \int_{0}^{1}
+        F_{2}\left( x-X_{1}\left( x_{1}\right)\right)
+        \,dm\left( x_{1}\right)
+        .
+    \end{aligned}
+  </p>
+  <p>
+    <ins>Proof:</ins> As before, we will only prove
+    \begin{aligned}
+        F\left( x\right)
+        &=
+        \int_{\R}
+        F_{1}\left( x-x_{2}\right)
+        \,d\mu_{2}\left( x_{2}\right)
+        =
+        \int_{0}^{1}
+        F_{1}\left( x-X_{2}\left( x_{2}\right)\right)
+        \,dm\left( x_{2}\right)
+    \end{aligned}
+    as the remaining equalities follow by symmetry. We have previously proven the first equality above. For the second equality, we know that \(F_{1}\left( x-x_{2}\right)\) is integrable w/r/t \(\mu_{2}\), and so we can apply the previous theorem with \(f=X_{2}\), \(g=F_{1}\), \(S_{1}=\left( 0,1\right)\), \(S_{2}=\R\), \(S_{3}=\left[ 0,1\right]\), \(\nu_{1}=m\), and \(\nu_{2}=\mu_{2}\).
+  </p>
 </body>
 </html>
