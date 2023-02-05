@@ -300,5 +300,11 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     \end{aligned}
     as the remaining equalities follow by symmetry. We have previously proven the first equality above. For the second equality, we know that \(F_{1}\left( x-x_{2}\right)\) is integrable w/r/t \(\mu_{2}\), and so we can apply the previous theorem with \(f=X_{2}\), \(g=F_{1}\), \(S_{1}=\left( 0,1\right)\), \(S_{2}=\mathbb{R}\), \(S_{3}=\left[ 0,1\right]\), \(\nu_{1}=m\), and \(\nu_{2}=\mu_{2}\).
   </p>
+<h2>
+  Independence is Unnecessary
+</h2>
+  <p>
+      The theorem from the previous section which gives a formula for the distribution function for \(X_{1}\oplus X_{2}\) is almost identical to Theorem 2.1.10 in Durrett's textbook, except that Theorem 2.1.10 gives a formula for the distribution function for \(X_{1}+X_{2}\) so long as \(X_{1}\) and \(X_{2}\) are independent. Since our theorem does not assume independence, it is reasonable to question the legitimacy of our theorem.
+  </p>
 </body>
 </html>
