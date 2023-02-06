@@ -317,7 +317,7 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
         .
     \end{aligned}
     \]
-    The problems arise from the ambiguity in the above equation. If \(X\) has domain \(\Omega_{X}\) with measure \(P_{X}\) and \(Y\) has domain \(\Omega_{Y}\) with measure \(P_{Y}\), then certainly \(P\left( X^{-1}\left( A\right)\right)=P_{X}\left( X^{-1}\left( A\right)\right)\) and \(P\left( Y^{-1}\left( B\right)\right)=P_{Y}\left( Y^{-1}\left( B\right)\right)\). When \(\Omega_{X}\neq\Omega_{Y}\) and \(P_{X}\neq P_{Y}\), then the only valid interpretation is
+    Problems arise because the \(P\)'s in the above equation are abiguous. If \(X\) has domain \(\Omega_{X}\) with measure \(P_{X}\) and \(Y\) has domain \(\Omega_{Y}\) with measure \(P_{Y}\), then certainly \(P\left( X^{-1}\left( A\right)\right)=P_{X}\left( X^{-1}\left( A\right)\right)\) and \(P\left( Y^{-1}\left( B\right)\right)=P_{Y}\left( Y^{-1}\left( B\right)\right)\). When \(\Omega_{X}\neq\Omega_{Y}\) and \(P_{X}\neq P_{Y}\), then the only valid interpretation is
     \[
     \begin{aligned}
         P\left( X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)\right)
@@ -342,39 +342,10 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     \]
   </p>
   <p>
-    Let's consider an example. Let \(X\) be a uniform distribution on \(\left( 0,1\right)\), and let \(Y=2X\). One expression for \(X\) is \(X\left(\omega\right)=\omega\) for \(\omega\in\left( 0,1\right)\). In this case we have \(Y\left(\omega\right)=2\omega\). Let \(A=\left(-\infty,1/2\right]\) and \(B=\left(-\infty,1\right]\). \(X^{-1}\left( A\right)=\left( 0,1/2\right]\), and so \(P\left( X^{-1}\left( A\right)\right)=1/2\). \(Y^{-1}\left( B\right)=\left( 0,1/2\right]\) as well, so \(P\left( Y^{-1}\left( B\right)\right)=1/2\). so \(P\left( X^{-1}\left( A\right)\right) P\left( Y^{-1}\left( B\right)\right)=1/4\). However, \(X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)=\left( 0,1/2\right]\), so \(P\left( X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)\right)=1/2\). Therefore, \(X\) and \(Y\) are not considered to be independent. Therefore, we would not be able to use Theorem 2.1.10 from Durrett's textbook to compute the distribution function for \(X_{1}+X_{2}\).
-  </p>
+    Let's consider an example. Let \(X\) be a random variable representing a game in which you flip a coin and win $1 if it comes up heads, but you lose $1 if it comes up tails. Then \(X\) has domain \(\left\lbrace H,T\right\rbrace\) with \(X\left(H\right)=1\), \(X\left(T\right)=-1\), and \(P\left(H\right)=P\left(T\right)=0.5\). A simple example of a random variable which is not independent to \(X\) is \(Y=X\). \(X\) and \(Y\) are not independent because \(P\left(X^{-1}\left(\left\lbrace 1\right\rbrace\right)\cap Y^{-1}\left(\left\lbrace 1\right\rbrace\right)\right)=P\left(\left\lbrace X=1\right\rbrace\cap\left\lbrace Y=1\right\rbrace\right)=0.5\) because the event \(H\) has probability \(0.5\) and results in both \(X\) and \(Y\) taking on the value of \(1\). Then, since \(P\left(X=1\right)=P\left(Y=1\right)=0.5\), we have \(P\left(X=1\right)\cdot P\left(Y=1\right)=0.25\neq 0.5\), and so \(X\) and \(Y\) are not independent. If we want independence, we can simply define \(Y\) such that \(X\) and \(Y\) are "independent and identically distributed."
   <p>
-    However, we can indeed define a perfectly valid random variable \(X_{1}\oplus X_{2}\) using the theorems from the previous section. If you aren't interested in the tedious calculations, the final result is
-    \[
-    \begin{aligned}
-        F\left( x\right)
-        =
-        \left\lbrace
-        \begin{array}{ll}
-        0,
-        & x\leq 0
-        \\
-        % \dfrac{x^{2}}{4},
-        x^{2}/4,
-        & 0<x\leq 1
-        \\
-        % \dfrac{2x-1}{4},
-        \left( 2x-1\right)/4,
-        & 1<x\leq 2
-        \\
-        % \dfrac{-x^{2}+6x-5}{4},
-        \left( -x^{2}+6x-5\right)/4,
-        & 2<x\leq 3
-        \\
-        1,
-        & x>3
-        \end{array}
-        \right.
-        .
-    \end{aligned}
-    \]
-    Thus we can combine random variables even if they are not independent according to standard definitions.
+  <p>
+    So then how do most textbooks define \(X+Y\)? If \(X\) and \(Y\) are not independent, then \(X+Y\) maps \(H\) to \(2\) and \(T\) to \(-2\). That is, the "\(+\)" refers to pointwise addition. But if \(X\) and \(Y\) are independent, then \(X+Y=X\oplus Y\) as we have defined previously. Therefore, in most textbooks, the addition operator is overloaded. This is one of my objections to the standard treatment of probability theory. I think it would be more intuitive to use "\(+\)" for pointwise addition and "\(\oplus\)" when combining the outcomes of two independent random variables.
   </p>
 </body>
 </html>
