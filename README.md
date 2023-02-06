@@ -304,7 +304,45 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
   Independence is Unnecessary
 </h2>
   <p>
-      The theorem from the previous section which gives a formula for the distribution function for \(X_{1}\oplus X_{2}\) is almost identical to Theorem 2.1.10 in Durrett's textbook, except that Theorem 2.1.10 gives a formula for the distribution function for \(X_{1}+X_{2}\) so long as \(X_{1}\) and \(X_{2}\) are independent. Since our theorem does not assume independence, it is reasonable to question the legitimacy of our theorem.
+      The previous section is mathematically sound, but what value does it provide over the existing literature? The previous theorem allows us to partially explore this question.
+  </p>
+  <p>
+      The previous theorem, which gives a formula for the distribution function for \(X_{1}\oplus X_{2}\), is almost identical to Theorem 2.1.10 in Durrett's textbook, except that Theorem 2.1.10 gives a formula for the distribution function for \(X_{1}+X_{2}\) so long as \(X_{1}\) and \(X_{2}\) are independent. Since our theorem does not assume independence, it is reasonable to question the legitimacy of our theorem.
+  </p>
+  <p>
+    To explore this nuance, let's first recall the definition of independence. Two events \(A\) and \(B\) are independent if \(P\left( A\cap B\right)=P\left( A\right) P\left( B\right)\). Two random variables \(X\) and \(Y\) are independent if for all events \(A\) and \(B\), we have
+    \[
+    \begin{aligned}
+        P\left( X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)\right)
+        =
+        P\left( X^{-1}\left( A\right)\right)
+        P\left( Y^{-1}\left( B\right)\right)
+        .
+    \end{aligned}
+    \]
+    The problems arise from the ambiguity in the above equation. If \(X\) has domain \(\Omega_{X}\) with measure \(P_{X}\) and \(Y\) has domain \(\Omega_{Y}\) with measure \(P_{Y}\), then certainly \(P\left( X^{-1}\left( A\right)\right)=P_{X}\left( X^{-1}\left( A\right)\right)\( and \(P\left( Y^{-1}\left( B\right)\right)=P_{Y}\left( Y^{-1}\left( B\right)\right)\). When \(\Omega_{X}\neq\Omega_{Y}\( and \(P_{X}\neq P_{Y}\), then the only valid interpretation is
+    \[
+    \begin{aligned}
+        P\left( X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)\right)
+        =
+        P_{X\times Y}
+        \left(
+        X^{-1}\left( A\right)\times Y^{-1}\left( B\right)
+        \right)
+    \end{aligned}
+    \]
+    where \(P_{X\times Y}\) is the product measure of \(P_{X}\) and \(P_{Y}\) on \(\Omega_{X}\times\Omega_{Y}\). However, if \(\Omega_{X}=\Omega_{Y}\) and \(P_{X}=P_{Y}\), authors sometimes behave as if
+    \[
+    \begin{aligned}
+        P\left( X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)\right)
+        =
+        P_{X}
+        \left(
+        X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)
+        \right)
+        .
+    \end{aligned}
+    \]
   </p>
 </body>
 </html>
