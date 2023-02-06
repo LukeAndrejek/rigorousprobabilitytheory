@@ -344,5 +344,40 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     \end{aligned}
     \]
   </p>
+  <p>
+    Let's consider an example. Let \(X\) be a uniform distribution on \(\left( 0,1\right)\), and let \(Y=2X\). One expression for \(X\) is \(X\left(\omega\right)=\omega\) for \(\omega\in\left( 0,1\right)\). In this case we have \(Y\left(\omega\right)=2\omega\). Let \(A=\left(-\infty,1/2\rb\) and \(B=\left(-\infty,1\rb\). \(X^{-1}\left( A\right)=\left( 0,1/2\rb\), and so \(P\left( X^{-1}\left( A\right)\right)=1/2\). \(Y^{-1}\left( B\right)=\left( 0,1/2\rb\) as well, so \(P\left( Y^{-1}\left( B\right)\right)=1/2\). so \(P\left( X^{-1}\left( A\right)\right) P\left( Y^{-1}\left( B\right)\right)=1/4\). However, \(X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)=\left( 0,1/2\rb\), so \(P\left( X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)\right)=1/2\). Therefore, \(X\) and \(Y\) are not considered to be independent. Therefore, we would not be able to use Theorem 2.1.10 from Durrett's textbook to compute the distribution function for \(X_{1}+X_{2}\).
+  </p>
+  <p>
+    However, we can indeed define a perfectly valid random variable \(X_{1}\oplus X_{2}\) using the theorems from the previous section. If you aren't interested in the tedious calculations, the final result is
+    \[
+    \begin{aligned}
+        F\left( x\right)
+        =
+        \left\lbrace
+        \begin{array}{ll}
+        0,
+        & x\leq 0
+        \\
+        % \dfrac{x^{2}}{4},
+        x^{2}/4,
+        & 0<x\leq 1
+        \\
+        % \dfrac{2x-1}{4},
+        \left( 2x-1\right)/4,
+        & 1<x\leq 2
+        \\
+        % \dfrac{-x^{2}+6x-5}{4},
+        \left( -x^{2}+6x-5\right)/4,
+        & 2<x\leq 3
+        \\
+        1,
+        & x>3
+        \end{array}
+        \right.
+        .
+    \end{aligned}
+    \]
+    Thus we can combine random variables even if they are not independent according to standard definitions.
+  </p>
 </body>
 </html>
