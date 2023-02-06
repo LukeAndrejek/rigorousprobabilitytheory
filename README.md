@@ -320,7 +320,7 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
         .
     \end{aligned}
     \]
-    The problems arise from the ambiguity in the above equation. If \(X\) has domain \(\Omega_{X}\) with measure \(P_{X}\) and \(Y\) has domain \(\Omega_{Y}\) with measure \(P_{Y}\), then certainly \(P\left( X^{-1}\left( A\right)\right)=P_{X}\left( X^{-1}\left( A\right)\right)\( and \(P\left( Y^{-1}\left( B\right)\right)=P_{Y}\left( Y^{-1}\left( B\right)\right)\). When \(\Omega_{X}\neq\Omega_{Y}\( and \(P_{X}\neq P_{Y}\), then the only valid interpretation is
+    The problems arise from the ambiguity in the above equation. If \(X\) has domain \(\Omega_{X}\) with measure \(P_{X}\) and \(Y\) has domain \(\Omega_{Y}\) with measure \(P_{Y}\), then certainly \(P\left( X^{-1}\left( A\right)\right)=P_{X}\left( X^{-1}\left( A\right)\right)\) and \(P\left( Y^{-1}\left( B\right)\right)=P_{Y}\left( Y^{-1}\left( B\right)\right)\). When \(\Omega_{X}\neq\Omega_{Y}\) and \(P_{X}\neq P_{Y}\), then the only valid interpretation is
     \[
     \begin{aligned}
         P\left( X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)\right)
@@ -345,7 +345,7 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     \]
   </p>
   <p>
-    Let's consider an example. Let \(X\) be a uniform distribution on \(\left( 0,1\right)\), and let \(Y=2X\). One expression for \(X\) is \(X\left(\omega\right)=\omega\) for \(\omega\in\left( 0,1\right)\). In this case we have \(Y\left(\omega\right)=2\omega\). Let \(A=\left(-\infty,1/2\rb\) and \(B=\left(-\infty,1\rb\). \(X^{-1}\left( A\right)=\left( 0,1/2\rb\), and so \(P\left( X^{-1}\left( A\right)\right)=1/2\). \(Y^{-1}\left( B\right)=\left( 0,1/2\rb\) as well, so \(P\left( Y^{-1}\left( B\right)\right)=1/2\). so \(P\left( X^{-1}\left( A\right)\right) P\left( Y^{-1}\left( B\right)\right)=1/4\). However, \(X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)=\left( 0,1/2\rb\), so \(P\left( X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)\right)=1/2\). Therefore, \(X\) and \(Y\) are not considered to be independent. Therefore, we would not be able to use Theorem 2.1.10 from Durrett's textbook to compute the distribution function for \(X_{1}+X_{2}\).
+    Let's consider an example. Let \(X\) be a uniform distribution on \(\left( 0,1\right)\), and let \(Y=2X\). One expression for \(X\) is \(X\left(\omega\right)=\omega\) for \(\omega\in\left( 0,1\right)\). In this case we have \(Y\left(\omega\right)=2\omega\). Let \(A=\left(-\infty,1/2\right]\) and \(B=\left(-\infty,1\right]\). \(X^{-1}\left( A\right)=\left( 0,1/2\right]\), and so \(P\left( X^{-1}\left( A\right)\right)=1/2\). \(Y^{-1}\left( B\right)=\left( 0,1/2\right]\) as well, so \(P\left( Y^{-1}\left( B\right)\right)=1/2\). so \(P\left( X^{-1}\left( A\right)\right) P\left( Y^{-1}\left( B\right)\right)=1/4\). However, \(X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)=\left( 0,1/2\right]\), so \(P\left( X^{-1}\left( A\right)\cap Y^{-1}\left( B\right)\right)=1/2\). Therefore, \(X\) and \(Y\) are not considered to be independent. Therefore, we would not be able to use Theorem 2.1.10 from Durrett's textbook to compute the distribution function for \(X_{1}+X_{2}\).
   </p>
   <p>
     However, we can indeed define a perfectly valid random variable \(X_{1}\oplus X_{2}\) using the theorems from the previous section. If you aren't interested in the tedious calculations, the final result is
