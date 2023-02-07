@@ -347,5 +347,26 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
   <p>
     So then how do most textbooks define \(X+Y\)? If \(X\) and \(Y\) are not independent, then \(X+Y\) maps \(H\) to \(2\) and \(T\) to \(-2\). That is, the "\(+\)" refers to pointwise addition. But if \(X\) and \(Y\) are independent, then \(X+Y=X\oplus Y\) as we have defined previously. Therefore, in most textbooks, the addition operator is overloaded. This is one of my objections to the standard treatment of probability theory. I think it would be more intuitive and less confusing to use "\(+\)" for pointwise addition and "\(\oplus\)" when combining the outcomes of two random variables. In addition to resolving the addition overloading, this removes the need to define independence for random variables, as \(X\oplus Y\) is defined to ensure that \(P_{X\times Y}\left(X^{-1}\left( A\right)\times Y^{-1}\left( B\right)\right)=P_{X}\left(X^{-1}\left(A\right)\right)\cdot P_{Y}\left(Y^{-1}\left(B\right)\right)\).
   </p>
+<h2>
+  The Weak Law of Large Numbers
+</h2>
+  <p>
+    Let us return to proving standard results in probability theory. We will now focus on proving various versions of the weak law of large numbers.
+  </p>
+  <p>
+    <ins>Definition:</ins> The <ins>variance</ins> of a random variable \(X\) is \(\var\left( X\right)=E\left( X-\mu\right)^{2}\) with \(\mu=EX\).
+  </p>
+  <p>
+    When working with variances, we will need to define a way to multiply random variables together.
+  </p>
+  <p>
+    <ins>Definition:</ins> The <ins>probability product</ins> of two random variables \(X_{1}\) and \(X_{2}\) on \(\left(\Omega_{1},P_{1}\right)\) and \(\left(\Omega_{2},P_{2}\right)\) is a function on \(\left(\Omega_{1}\times\Omega_{2},P_{1}\times P_{2}\right)\) which we will denote by \(X_{1}\odot X_{2}\) and define by \(\left( X_{1}\odot X_{2}\right)\left( x_{1},x_{2}\right)=X_{1}\left( x_{1}\right) X_{2}\left( x_{2}\right)\).
+  </p>
+  <p>
+    <ins>Proposition:</ins> If \(X_{1}\) and \(X_{2}\) are random variables, then so is \(X_{1}\odot X_{2}\).
+  </p>
+  <p>
+    <ins>Proof:</ins> The proof is similar to the proof that \(X_{1}\oplus X_{2}\) is a random variable, but with addition replaced by multiplication whenever applicable.
+  </p>
 </body>
 </html>
