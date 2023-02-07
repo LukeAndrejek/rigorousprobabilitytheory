@@ -354,7 +354,7 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     Let us return to proving standard results in probability theory. We will now focus on proving various versions of the weak law of large numbers.
   </p>
   <p>
-    <ins>Definition:</ins> The <ins>variance</ins> of a random variable \(X\) is \(\var\left( X\right)=E\left( X-\mu\right)^{2}\) with \(\mu=EX\).
+    <ins>Definition:</ins> The <ins>variance</ins> of a random variable \(X\) is \(\operatorname{var}\left( X\right)=E\left( X-\mu\right)^{2}\) with \(\mu=EX\).
   </p>
   <p>
     When working with variances, we will need to define a way to multiply random variables together.
@@ -367,6 +367,12 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
   </p>
   <p>
     <ins>Proof:</ins> The proof is similar to the proof that \(X_{1}\oplus X_{2}\) is a random variable, but with addition replaced by multiplication whenever applicable.
+  </p>
+  <p>
+    <ins>Note:</ins> If \(X_{1}\odot X_{2}\) is integrable, then by Fubini's theorem, \(E\left( X_{1}\odot X_{2}\right)=EX_{1}\cdot EX_{2}\).
+  </p>
+  <p>
+    <ins>Proposition:</ins> Let \(X_{1},\dots,X_{n}\) be random variables such that \(X_{i}\) and \(X_{i}\odot X_{j}\) are integrable for all \(1\leq i,j\leq n\) with \(i\neq j\). Then \(\operatorname{var}\left(\oplus_{1}^{n}X_{i}\right)=\sum_{1}^{n}\operatorname{var}\left( X_{i}\right)\).
   </p>
 </body>
 </html>
