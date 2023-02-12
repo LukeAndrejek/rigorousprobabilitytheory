@@ -374,5 +374,102 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
   <p>
     <ins>Proposition:</ins> Let \(X_{1},\dots,X_{n}\) be random variables such that \(X_{i}\) and \(X_{i}\odot X_{j}\) are integrable for all \(1\leq i,j\leq n\) with \(i\neq j\). Then \(\operatorname{var}\left(\oplus_{1}^{n}X_{i}\right)=\sum_{1}^{n}\operatorname{var}\left( X_{i}\right)\).
   </p>
+  <p>
+    <ins>Proof:</ins> Let \(\Omega=\Omega_{1}\times\dots\times\Omega_{n}\) and \(P=P_{1}\times\dots\times P_{n}\). First note that
+    \[
+    \begin{aligned}
+        E\bigoplus_{1}^{n}X_{i}
+        &=
+        \int_{\Omega}
+        \left(\bigoplus_{1}^{n}X_{i}\right)\left(\omega\right)
+        \,dP\left(\omega\right)
+        \\
+        &=
+        \int_{\Omega_{1}}\dots\int_{\Omega_{n}}
+        \sum_{1}^{n}X_{i}\left(\omega_{i}\right)
+        \,dP_{n}\left(\omega_{n}\right)\dots dP_{1}\left(\omega_{1}\right)
+        \\
+        &=
+        \sum_{1}^{n}\int_{\Omega_{i}}X_{i}\,dP_{i}
+        =
+        \sum_{1}^{n}EX_{i}
+        ,
+    \end{aligned}
+    \]
+    where we have used Fubini’s theorem and the fact that \(\int_{\Omega_{i}}c\,dP_{i}=c\) for any constant \(c\). Then
+    \[
+    \begin{aligned}
+        \operatorname{var}\left(\bigoplus_{1}^{n}X_{i}\right)
+        =&
+        E\left(\bigoplus_{1}^{n}X_{i}-E\bigoplus_{1}^{n}X_{i}\right)^{2}
+        \\
+        =&
+        \int_{\Omega}\left(\sum_{1}^{n}X_{i}\left(\omega_{i}\right)-\sum_{1}^{n}EX_{i}\right)^{2}
+        \,dP
+        \\
+        =&
+        \int_{\Omega}
+        \left(\sum_{1}^{n}\left( X_{i}\left(\omega_{i}\right)-EX_{i}\right)\right)^{2}
+        \,dP
+        \\
+        =&
+        \int_{\Omega}
+        \left(\sum_{1}^{n}\left( X_{i}\left(\omega_{i}\right)-EX_{i}\right)^{2}
+        +\sum_{i\neq j}\left( X_{i}\left(\omega_{i}\right)-EX_{i}\right)\left( X_{j}\left(\omega_{j}\right)-EX_{j}\right)\right)
+        \,dP
+        \\
+        =&
+        \int_{\Omega}
+        \sum_{1}^{n}\left( X_{i}\left(\omega_{i}\right)-EX_{i}\right)^{2}
+        \,dP
+        +\int_{\Omega}
+        \sum_{i\neq j}
+        \left(
+        X_{i}\left(\omega_{i}\right) X_{j}\left(\omega_{j}\right)
+        -X_{i}\left(\omega_{i}\right) EX_{j}
+        \right.
+        \\
+        &\left.
+        -X_{j}\left(\omega_{j}\right) EX_{i}
+        +EX_{i}EX_{j}
+        \right)
+        \,dP
+        .
+    \end{aligned}
+    \]
+    In the expression at the end of the above equation, we can apply Fubini's theorem to the first integral because each \(\left( X_{i}-EX_{i}\right)^{2}\geq0\) is measurable and to the second integral above because each \(X_{i}\) and \(X_{i}\odot X_{j}\) is integrable. Therefore,
+    \[
+    \begin{aligned}
+        \operatorname{var}\left(\bigoplus_{1}^{n}X_{i}\right)
+        =&
+        \sum_{1}^{n}
+        \int_{\Omega_{i}}
+        \left( X_{i}-EX_{i}\right)^{2}
+        \,dP_{i}
+        +\sum_{i\neq j}
+        \int_{\Omega_{i}}\int_{\Omega_{j}}
+        \left(
+        X_{i}\left(\omega_{i}\right) X_{j}\left(\omega_{j}\right)
+        -X_{i}\left(\omega_{i}\right) EX_{j}
+        \right.
+        \\
+        &\left.
+        -X_{j}\left(\omega_{j}\right) EX_{i}
+        +EX_{i}EX_{j}
+        \right)
+        \,dP_{j}\,dP_{i}
+        \\
+        =&
+        \sum_{1}^{n}E\left( X_{i}-EX_{i}\right)^{2}
+        +
+        \sum_{i\neq j}
+        \left( EX_{i}EX_{j}-EX_{i}EX_{j}-EX_{j}EX_{i}+EX_{i}EX_{j}\right)
+        \\
+        =&
+        \sum_{1}^{n}\operatorname{var}\left( X_{i}\right)
+        .
+    \end{aligned}
+    \]
+  </p>
 </body>
 </html>
