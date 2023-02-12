@@ -8,8 +8,10 @@
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
 </head>
 <body>
+  <a class="btn btn-rss" href="/feed.xml" target="_blank">RSS</a>
   <h1>
     Rigorous Probability Theory
   </h1>
