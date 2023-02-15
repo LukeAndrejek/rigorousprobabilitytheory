@@ -474,7 +474,7 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     \]
   </p>
   <p>
-    <ins>Proposition:</ins> If \(X\) is a random variable and \(c\in\R\), then \(\operatorname{var}\left( cX\right)=c^{2}\operatorname{var}\left( X\right)\).
+    <ins>Proposition:</ins> If \(X\) is a random variable and \(c\in\mathbb{R}\), then \(\operatorname{var}\left( cX\right)=c^{2}\operatorname{var}\left( X\right)\).
   </p>
   <p>
     <ins>Proof:</ins>
