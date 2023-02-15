@@ -473,5 +473,31 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     \end{aligned}
     \]
   </p>
+  <p>
+    <ins>Proposition:</ins> If \(X\) is a random variable and \(c\in\R\), then \(\operatorname{var}\left( cX\right)=c^{2}\operatorname{var}\left( X\right)\).
+  </p>
+  <p>
+    <ins>Proof:</ins>
+    \[
+    \begin{aligned}
+        \operatorname{var}\left( cX\right)
+        &=
+        E\left( cX-EcX\right)^{2}
+        =
+        E\left( cX-cEX\right)^{2}
+        =
+        E\left( c\left( X-EX\right)\right)^{2}
+        \\
+        &=
+        c^{2}E\left( X-EX\right)^{2}
+        =
+        c^{2}\operatorname{var}\left( X\right)
+        .
+    \end{aligned}
+    \]
+  </p>
+  <p>
+    We are now ready for the \(L^{2}\) weak law of large numbers. It is very similar to Theorem 2.2.3 in Durrett's textbook.
+  </p>
 </body>
 </html>
