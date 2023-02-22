@@ -499,5 +499,30 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
   <p>
     We are now ready for the \(L^{2}\) weak law of large numbers. It is very similar to Theorem 2.2.3 in Durrett's textbook.
   </p>
+  <p>
+    <ins>The \(L^{2}\) Weak Law of Large Numbers:</ins> Let \(X_{1},X_{2},\dots\) be a sequence of random variables and \(\mu\in\mathbb{R}\) such that \(EX_{i}=\mu\) for all \(i\in\mathbb{N}\) and such that \(X_{i}\odot X_{j}\) is integrable for all \(i,j\in\mathbb{N}\) with \(i\neq j\). Suppose the set \(\left\lbrace\operatorname{var}\left(X_{i}\right):i\in\mathbb{N}\right\rbrace\) is bounded above by some \(C\in\mathbb{R}\). Let \(S_{n}=\oplus_{1}^{n}X_{i}\). Then \(S_{n}/n\to\mu\) in \(L^{2}\).
+  </p>
+  <p>
+    <ins>Proof:</ins>
+    \[
+    \begin{aligned}
+        E\left(\dfrac{S_{n}}{n}-\mu\right)^{2}
+        =
+        \operatorname{var}\left(\dfrac{S_{n}}{n}\right)
+        =
+        \dfrac{1}{n^{2}}
+        \operatorname{var}\left(\bigoplus_{1}^{n}X_{i}\right)
+        =
+        \dfrac{1}{n^{2}}
+        \sum_{1}^{n}\operatorname{var}\left( X_{i}\right)
+        \leq
+        \dfrac{Cn}{n^{2}}
+        =
+        \dfrac{C}{n}
+        \to 0
+        .
+    \end{aligned}
+    \]
+  </p>
 </body>
 </html>
