@@ -543,5 +543,25 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
   <p>
     <ins>Proof:</ins> See Theorem 6.17 in Folland's analysis textbook.
   </p>
+  <p>
+    <ins>The Probability Weak Law of Large Numbers:</ins> Let \(X_{1},X_{2},\dots\) be a sequence of random variables and \(\mu\in\mathb{R}\) such that \(EX_{i}=\mu\) for all \(i\in\mathbb{N}\) and \(X_{i}\odot X_{j}\) is integrable for all \(i,j\in\mathbb{N}\) with \(i\neq j\). Suppose \(\operatorname{var}\left( X_{i}\right)\leq C\in\mathbb{R}\) for all \(i\). Let \(S_{n}=\oplus_{1}^{n}X_{i}\). Then \(S_{n}/n\to\mu\) in probability.
+  </p>
+  <p>
+    <ins>Proof:</ins> Let \(Y_{n}=S_{n}/n-\mu\). We know by the \(L^{2}\) weak law of large numbers that \(E\left| Y_{n}\right|^{2}\to 0\). Given \(\varepsilon>0\), then by Chebyshev's inequality with \(p=2\), \(f=Y_{n}\), and \(\alpha=\varepsilon\), we have
+    \[
+    \begin{aligned}
+        P_{n}\left(\left\lbrace\left| Y_{n}\right|\geq\varepsilon\right\rbrace\right)
+        \leq
+        \left(
+        \dfrac{\left( E\left| Y_{n}\right|^{2}\right)^{1/2}}{\varepsilon}
+        \right)^{2}
+        =
+        \dfrac{E\left| Y_{n}\right|^{2}}{\varepsilon^{2}}
+        \to 0
+        .
+    \end{aligned}
+    That is, \(Y_{n}\to 0\) in probability.
+    \]
+  </p>
 </body>
 </html>
