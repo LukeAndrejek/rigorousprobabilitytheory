@@ -524,5 +524,24 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     \end{aligned}
     \]
   </p>
+  <p>
+    <ins>Definition:</ins> We say that random variables \(X_{1},X_{2},\dots\) <ins>converge in probability</ins> to \(0\) if for all \(\varepsilon>0\) we have \(P_{n}\left(\left\lbrace\left| X_{n}\right|\geq\varepsilon\right\rbrace\right)\to 0\) as \(n\to\infty\).
+  </p>
+  <p>
+    <ins>Chebyshev's Inequaltiy:</ins> If \(p\in\left( 0,\infty\right)\) and \(f\in L^{p}\), then \(\forall\alpha>0\),
+    \[
+    \begin{aligned}
+        \mu\left(\left\lbrace\left| f\right|>\alpha\right\rbrace\right)
+        \leq
+        \left(
+        \dfrac{\left| f\right|_{p}}{\alpha}
+        \right)^{p}
+        .
+    \end{aligned}
+    \]
+  </p>
+  <p>
+    <ins>Proof:</ins> See Theorem 6.17 in Folland's analysis textbook.
+  </p>
 </body>
 </html>
