@@ -544,7 +544,7 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     <ins>Proof:</ins> See Theorem 6.17 in Folland's analysis textbook.
   </p>
   <p>
-    <ins>The Probability Weak Law of Large Numbers:</ins> Let \(X_{1},X_{2},\dots\) be a sequence of random variables and \(\mu\in\mathb{R}\) such that \(EX_{i}=\mu\) for all \(i\in\mathbb{N}\) and \(X_{i}\odot X_{j}\) is integrable for all \(i,j\in\mathbb{N}\) with \(i\neq j\). Suppose \(\operatorname{var}\left( X_{i}\right)\leq C\in\mathbb{R}\) for all \(i\). Let \(S_{n}=\oplus_{1}^{n}X_{i}\). Then \(S_{n}/n\to\mu\) in probability.
+    <ins>The Probability Weak Law of Large Numbers:</ins> Let \(X_{1},X_{2},\dots\) be a sequence of random variables and \(\mu\in\mathbb{R}\) such that \(EX_{i}=\mu\) for all \(i\in\mathbb{N}\) and \(X_{i}\odot X_{j}\) is integrable for all \(i,j\in\mathbb{N}\) with \(i\neq j\). Suppose \(\operatorname{var}\left( X_{i}\right)\leq C\in\mathbb{R}\) for all \(i\). Let \(S_{n}=\oplus_{1}^{n}X_{i}\). Then \(S_{n}/n\to\mu\) in probability.
   </p>
   <p>
     <ins>Proof:</ins> Let \(Y_{n}=S_{n}/n-\mu\). We know by the \(L^{2}\) weak law of large numbers that \(E\left| Y_{n}\right|^{2}\to 0\). Given \(\varepsilon>0\), then by Chebyshev's inequality with \(p=2\), \(f=Y_{n}\), and \(\alpha=\varepsilon\), we have
@@ -560,21 +560,21 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
         \to 0
         .
     \end{aligned}
-    That is, \(Y_{n}\to 0\) in probability.
     \]
+    That is, \(Y_{n}\to 0\) in probability.
   </p>
   <p>
     The remaining weak laws of large numbers can be proven using Durrett's proofs of Theorems 2.2.11, 2.2.12, and 2.2.14, respectively.
   </p>
   <p>
     <ins>Theorem:</ins> For each \(n\in\mathbb{N}\) and \(1\leq k\leq n\), let \(X_{n,k}\) be a random variable. Let \(b_{n}>0\), \(b_{n}\to\infty\), and \(\overline{X}_{n,k}\left(\omega\right)
-=X_{n,k}\left(\omega\right)\mathbb{1}_{X_{n,k}^{-1}\lb -b_{n},b_{n}\rb}\left(\omega\right)\). Suppose that as \(n\to\infty\), we have \(\sum_{k=1}^{n}P\left(\left| X_{n,k}\right|>b_{n}\right)\to 0\) and \(b_{n}^{-2}\sum_{k=1}^{n}E\overline{X}_{n,k}^{2}\to 0\). Suppose further that for all \(n\) and \(1\leq i,j\leq n\), \(\overline{X}_{n,i}\odot\overline{X}_{n,j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X_{n,i}\), and define \(a_{n}=\sum_{k=1}^{n}E\overline{X}_{n,k}\). Then \(\left( S_{n}-a_{n}\right)/b_{n}\to 0\) in probability.
+=X_{n,k}\left(\omega\right)\mathbb{1}_{X_{n,k}^{-1}\left[ -b_{n},b_{n}\right]}\left(\omega\right)\). Suppose that as \(n\to\infty\), we have \(\sum_{k=1}^{n}P\left(\left| X_{n,k}\right|>b_{n}\right)\to 0\) and \(b_{n}^{-2}\sum_{k=1}^{n}E\overline{X}_{n,k}^{2}\to 0\). Suppose further that for all \(n\) and \(1\leq i,j\leq n\), \(\overline{X}_{n,i}\odot\overline{X}_{n,j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X_{n,i}\), and define \(a_{n}=\sum_{k=1}^{n}E\overline{X}_{n,k}\). Then \(\left( S_{n}-a_{n}\right)/b_{n}\to 0\) in probability.
   </p>
   <p>
-    <ins>The Weak Law of Large Numbers:</ins> Let \(X\) be a random variable such that as \(x\to\infty\), \(xP\left(\left| X\right|>x\right)\to 0\), and if \(X_{n}=X\mathbb{1}_{X^{-1}\lb -n,n\rb}\), then given integers \(i\) and \(j\), \(X_{i}\odot X_{j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X\) and \(\mu_{n}=E\left( X_{n}\right)\). Then \(S_{n}/n-\mu_{n}\to 0\) in probability.
+    <ins>The Weak Law of Large Numbers:</ins> Let \(X\) be a random variable such that as \(x\to\infty\), \(xP\left(\left| X\right|>x\right)\to 0\), and if \(X_{n}=X\mathbb{1}_{X^{-1}\left[ -n,n\right]}\), then given integers \(i\) and \(j\), \(X_{i}\odot X_{j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X\) and \(\mu_{n}=E\left( X_{n}\right)\). Then \(S_{n}/n-\mu_{n}\to 0\) in probability.
   </p>
   <p>
-    <ins>Theorem:</ins> Let \(X\) be a random variable with \(E\left| X\right|<\infty\) and if \(X_{n}=X\mathbb{1}_{X^{-1}\lb -n,n\rb}\), then given integers \(i\) and \(j\), \(X_{i}\odot X_{j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X\) and \(\mu=EX\). Then \(S_{n}/n\to\mu\) in probability.
+    <ins>Theorem:</ins> Let \(X\) be a random variable with \(E\left| X\right|<\infty\) and if \(X_{n}=X\mathbb{1}_{X^{-1}\left[ -n,n\right]}\), then given integers \(i\) and \(j\), \(X_{i}\odot X_{j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X\) and \(\mu=EX\). Then \(S_{n}/n\to\mu\) in probability.
   </p>
 </body>
 </html>
