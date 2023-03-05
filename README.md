@@ -563,5 +563,18 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
     That is, \(Y_{n}\to 0\) in probability.
     \]
   </p>
+  <p>
+    The remaining weak laws of large numbers can be proven using Durrett's proofs of Theorems 2.2.11, 2.2.12, and 2.2.14, respectively.
+  </p>
+  <p>
+    <ins>Theorem:</ins> For each \(n\in\mathbb{N}\) and \(1\leq k\leq n\), let \(X_{n,k}\) be a random variable. Let \(b_{n}>0\), \(b_{n}\to\infty\), and \(\overline{X}_{n,k}\left(\omega\right)
+=X_{n,k}\left(\omega\right)\mathbb{1}_{X_{n,k}^{-1}\lb -b_{n},b_{n}\rb}\left(\omega\right)\). Suppose that as \(n\to\infty\), we have \(\sum_{k=1}^{n}P\left(\left| X_{n,k}\right|>b_{n}\right)\to 0\) and \(b_{n}^{-2}\sum_{k=1}^{n}E\overline{X}_{n,k}^{2}\to 0\). Suppose further that for all \(n\) and \(1\leq i,j\leq n\), \(\overline{X}_{n,i}\odot\overline{X}_{n,j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X_{n,i}\), and define \(a_{n}=\sum_{k=1}^{n}E\overline{X}_{n,k}\). Then \(\left( S_{n}-a_{n}\right)/b_{n}\to 0\) in probability.
+  </p>
+  <p>
+    <ins>The Weak Law of Large Numbers:</ins> Let \(X\) be a random variable such that as \(x\to\infty\), \(xP\left(\left| X\right|>x\right)\to 0\), and if \(X_{n}=X\mathbb{1}_{X^{-1}\lb -n,n\rb}\), then given integers \(i\) and \(j\), \(X_{i}\odot X_{j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X\) and \(\mu_{n}=E\left( X_{n}\right)\). Then \(S_{n}/n-\mu_{n}\to 0\) in probability.
+  </p>
+  <p>
+    <ins>Theorem:</ins> Let \(X\) be a random variable with \(E\left| X\right|<\infty\) and if \(X_{n}=X\mathbb{1}_{X^{-1}\lb -n,n\rb}\), then given integers \(i\) and \(j\), \(X_{i}\odot X_{j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X\) and \(\mu=EX\). Then \(S_{n}/n\to\mu\) in probability.
+  </p>
 </body>
 </html>
