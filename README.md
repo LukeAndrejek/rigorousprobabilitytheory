@@ -576,5 +576,23 @@ Given the data from the above definition, if \(g:S_{2}\to S_{3}\) is measurable,
   <p>
     <ins>Theorem:</ins> Let \(X\) be a random variable with \(E\left| X\right|<\infty\) and if \(X_{n}=X\mathbb{1}_{X^{-1}\left[ -n,n\right]}\), then given integers \(i\) and \(j\), \(X_{i}\odot X_{j}\) is integrable. Let \(S_{n}=\bigoplus_{1}^{n}X\) and \(\mu=EX\). Then \(S_{n}/n\to\mu\) in probability.
   </p>
+  <h2>
+    The Strong Law of Large Numbers
+  </h2>
+  <p>
+    We can now move on to the strong laws of large numbers. Our approach to this theorem varies significantly from the standard approach. To justify our approach, let us first consider the standard definition of almost sure convergence.
+  </p>
+  <p>
+    <ins>Definition:</ins> Let \(X_{1},X_{2},\dots\) be a sequence of random variables on a probability space \(\Omega\). We say that \(X_{1},X_{2},\dots\) converges <ins>almost surely</ins> or ``a.s.'' if \(P\left(\lim_{n\to\infty}X_{n}\text{ exists}\right)=1\). We say that \(X_{1},X_{2},\dots\) converges a.s. to a random variable \(X\) on \(\Omega\) if \(P\left(\lim_{n\to\infty}X_{n}=X\right)=1\).
+  </p>
+  <p>
+    Almost sure convergence is used in the traditional statement of the law of large numbers, e.g. Theorem 2.4.1 in Durrett's textbook, which can be stated as follows:
+  </p>
+  <p>
+    <ins>Theorem:</ins> Let \(X_{1},X_{2}\), be pairwise independent i.i.d. random variables with \(E\left| X_{i}\right|<\infty\). If \(EX_{i}=\mu\) and \(S_{n}=X_{1}+\dots+X_{n}\), then \(S_{n}/n\to\mu\) a.s.
+  </p>
+  <p>
+    If we are to interpret this theorem literally, then each \(X_{i}\) represents the same function, and so \(S_{n}/n\) is equal to every \(X_{i}\), in which case the theroem as stated does not hold. We will instead define \(S_{n}=X_{1}\oplus\dots\oplus X_{n}\), as we did for the weak law of large numbers. However, this means that \(S_{n}/n\) is defined on \(\Omega_{1}\times\dots\times\Omega_{n}\). Almost sure convergence of a sequence requires by definition that every function in the sequence have the same domain. Since the domain of \(S_{n}/n\) depends on \(n\), this sequence cannot converge almost surely. Our solution is to embed each \(S_{n}/n\) into the infinite product space \(\Omega=\bigtimes_{i=1}^{\infty}\Omega_{i}\) and then establish almost sure convergence in this infinite product space.
+  </p>
 </body>
 </html>
